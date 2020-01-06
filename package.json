@@ -11,10 +11,10 @@
     "> 1%",
     "last 3 version"
   ],
-  "author": "https://github.com/vedees",
+  "author": "https://github.com/alyonafust",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vedees/webpack-template.git"
+    "url": "git+https://github.com/alyonafust/test"
   },
   "bugs": {
     "url": "https://github.com/vedees/webpack-template/issues"
@@ -56,5 +56,6 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
-  }
+  },
+  "homepage": "https://github.com/vedees/webpack-template#readme"
 }
