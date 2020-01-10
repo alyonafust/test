@@ -104,3 +104,72 @@ section,
 
 // Modules:
 // example: @import "modules/my-module.scss";
+
+.containerColorsType {
+  display: flex;
+  flex-direction: row;
+  li {
+    //border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+    //grid-template-rows: 2;
+    //width: ;
+  }
+}
+
+.color {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 70px;
+	height: 70px;
+  background: #1F2041;
+  border-radius: 6px;
+  &2 {
+    background-color: rgba(31, 32, 65, 0.75);
+  }
+  &3 {
+    background-color: rgba(61, 64, 161, 0.5);
+  }
+  &4 {
+    background-color: rgba(31, 32, 65, 0.25);
+  }
+  &5 {
+    background-color: rgba(31, 32, 65, 0.05);
+  }
+  &6 {
+    background-color: #BC9CFF;
+  }
+  &7 {
+    background-color: #6FCF97;
+  }
+
+}
+
+
+.type li.div {
+  //font-size: 24px;
+  //line-height: 29px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.type li.h1 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  
+  /* Dark 100% */
+  
+  color: #1F2041;
+}
+
+.logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
