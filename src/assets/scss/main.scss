@@ -105,71 +105,131 @@ section,
 // Modules:
 // example: @import "modules/my-module.scss";
 
-.containerColorsType {
-  display: flex;
-  flex-direction: row;
-  li {
-    //border: 1px solid black;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 10px;
-    //grid-template-rows: 2;
-    //width: ;
-  }
-}
-
-.color {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  width: 70px;
-	height: 70px;
-  background: #1F2041;
-  border-radius: 6px;
-  &2 {
-    background-color: rgba(31, 32, 65, 0.75);
-  }
-  &3 {
-    background-color: rgba(61, 64, 161, 0.5);
-  }
-  &4 {
-    background-color: rgba(31, 32, 65, 0.25);
-  }
-  &5 {
-    background-color: rgba(31, 32, 65, 0.05);
-  }
-  &6 {
-    background-color: #BC9CFF;
-  }
-  &7 {
-    background-color: #6FCF97;
-  }
-
-}
-
-
-.type li.div {
-  //font-size: 24px;
-  //line-height: 29px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.type li.h1 {
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  
-  /* Dark 100% */
-  
-  color: #1F2041;
-}
-
 .logo {
   position: absolute;
   left: 30px;
   top: 30px;
 }
+
+.containerColorsType {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1100px;
+  margin-left: 140px;
+  margin-top: 57px;
+  .colors {
+    li {
+      display: grid;
+      width: 270px;
+      grid-template-columns: 70px 160px;
+      grid-column-gap: 40px;
+      margin: 10px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 29px;
+      .color {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 70px;
+        height: 70px;
+        background: $darkShade100;
+        border-radius: 6px;
+        &2 {
+          background-color: $darkShade75 ;
+        }
+        &3 {
+          background-color: $darkShade50;
+        }
+        &4 {
+          background-color: $darkShade25;
+        }
+        &5 {
+          background-color: $darkShade5;
+        }
+        &6 {
+          background-color: $purple;
+        }
+        &7 {
+          background-color: $green;
+        }
+      
+      }
+    }
+  }
+  .type {
+    display: flex;
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 434px;
+      font-style: normal;
+      font-weight: normal;
+      
+      color: $darkShade25;
+      &:first-child {
+        flex: 1 1 30px;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: right;
+        div:last-child {
+          flex: 1 1 336px;
+          font-family: Quicksand;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 30px;
+          color: $darkShade100;
+          text-align: left;
+        }
+      }
+      &:nth-child(2) {
+        font-size: 19px;
+        line-height: 23px;
+        text-align: right;
+        div:last-child {
+          font-family: Quicksand;
+          font-weight: bold;
+          font-size: 19px;
+          line-height: 24px;
+          color: $darkShade100;
+          text-align: left;
+        }
+      }
+      &:nth-child(3) {
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        text-align: right;
+        div:last-child {
+          font-weight: bold;
+          color: $darkShade100;
+          text-align: left;
+        }
+      }
+      &:last-child {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: right;
+        div:last-child {
+          color: $darkShade75 ;
+          text-align: left;
+        }
+      }
+    } 
+  }
+  
+}
+
+
+
+
+
+
+
+
+
