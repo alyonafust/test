@@ -112,27 +112,33 @@ section,
 }
 
 .containerColorsType {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 24.5% 36.5%;
+  grid-column-gap: 38.85%;
   font-family: Quicksand;
   justify-content: space-between;
-  width: 1100px;
-  margin-left: 140px;
-  margin-top: 57px;
+  margin-left: 9.72%;
+  margin-right: 13.2639%;
+  margin-top: 6.5972%;
   .colors {
     li {
       display: grid;
-      width: 270px;
-      grid-template-columns: 70px 160px;
+      //width: 270px;
+      grid-template-columns: 26% 169px;
       grid-column-gap: 40px;
-      margin: 10px;
-      //font-family: Quicksand;
-      font-style: normal;
-      font-weight: bold;
+      padding: 10px;
+      font-family: Quicksand-Bold;
       font-size: 19px;
       line-height: 29px;
+      .colorName {
+        margin-top: 7px;
+        margin-left: 5px;
+      }
       .code {
-        font-weight: normal;
+        font-family: Quicksand;
+        align-items: top;
+        margin-left: 5px;
+        //margin-bottom: 7px;
       }
       .color {
         grid-column-start: 1;
@@ -171,22 +177,29 @@ section,
     }
   }
   .type {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat;
     li {
       display: grid;
       grid-template-columns: 30px 336px;
       grid-column-gap: 30px;
-      //flex-direction: row;
-      width: 434px;
+      //justify-items: right; 
+      text-align: left;
+      margin: 10px;
       font-style: normal;
       font-weight: normal;
       margin-bottom: 50px;
       color: $darkShade25;
+      div:first-child {
+        text-align: right;
+      }
       &:first-child {
         font-size: 24px;
         line-height: 29px;
+        //justify-items: right;
         div:last-child {
-          //font-family: Quicksand;
-          font-weight: bold;
+          font-family: Quicksand-Bold;
           font-size: 24px;
           line-height: 30px;
           color: $darkShade100;
@@ -196,8 +209,7 @@ section,
         font-size: 19px;
         line-height: 23px;
         div:last-child {
-          //font-family: Quicksand;
-          font-weight: bold;
+          font-family: Quicksand-Bold;
           font-size: 19px;
           line-height: 24px;
           color: $darkShade100;
@@ -208,8 +220,9 @@ section,
         line-height: 15px;
         text-transform: uppercase;
         div:last-child {
-          font-weight: bold;
+          font-family: Montserrat-Bold;
           color: $darkShade100;
+          //text-align: left;
         }
       }
       &:last-child {
