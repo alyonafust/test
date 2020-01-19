@@ -73,6 +73,7 @@ module.exports = {
       {
         // Fonts
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        include: [/fonts/],
         loader: "file-loader",
         options: {
           name: "[name].[ext]"
@@ -81,6 +82,7 @@ module.exports = {
       {
         // images / icons
         test: /\.(png|jpg|gif|svg)$/,
+        exclude: [/fonts/],
         loader: "file-loader",
         options: {
           name: "[name].[ext]"

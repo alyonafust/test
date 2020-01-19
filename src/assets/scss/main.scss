@@ -236,7 +236,23 @@ li {
   
 }
 
-
+.headersFooters {
+  font-family: $mainFont;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #E5E5E5;
+  .headerV1 {
+    width: 1440px;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &div {
+      text-align: middle;
+    }
+  }
+}
 
 
 
