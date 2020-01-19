@@ -56,7 +56,7 @@ li {
   list-style-type: none;
 }
 
-section,
+/*section,
 .section {
   position: relative;
   padding: 40px 0;
@@ -69,7 +69,7 @@ section,
   @media screen and (max-width: $phoneWidth) {
     padding: 20px 0;
   }
-}
+}*/
 
 .wrapper {
   display: flex;
@@ -83,6 +83,10 @@ section,
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 76.3194%;
+  margin-left: 10.4167%;
+  margin-right: 13.2639%;
+  margin-top: 10.0694%;
 }
 
 .container {
@@ -113,39 +117,36 @@ section,
 
 .containerColorsType {
   display: grid;
-  grid-template-columns: 24.5% 36.5%;
-  grid-column-gap: 38.85%;
+  grid-template-columns: 24.4768% 36.6697%;
   font-family: Quicksand;
   justify-content: space-between;
-  margin-left: 9.72%;
-  margin-right: 13.2639%;
-  margin-top: 6.5972%;
   .colors {
     li {
       display: grid;
-      //width: 270px;
-      grid-template-columns: 26% 169px;
-      grid-column-gap: 40px;
-      padding: 10px;
+      grid-template-columns: 26.0223% 59.1078%;
+      //grid-template-columns: 26.0223% auto;
+      justify-content: space-between;
+      //grid-column-gap: 20px;
+      //text-align: left;
+      margin-bottom: 7.4349%;
       font-family: Quicksand-Bold;
       font-size: 19px;
       line-height: 29px;
       .colorName {
+        //min-width: auto;
         margin-top: 7px;
-        margin-left: 5px;
       }
       .code {
         font-family: Quicksand;
-        align-items: top;
-        margin-left: 5px;
-        //margin-bottom: 7px;
+        margin-bottom: 2px;
+        //padding-top: 0px;
       }
       .color {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 3;
-        width: 70px;
+        width: 100%;
         height: 70px;
         background: $darkShade100;
         border-radius: 6px;
@@ -177,19 +178,17 @@ section,
     }
   }
   .type {
-    margin: 0px;
-    padding: 0px;
-    font-family: Montserrat;
+    font-family: $mainFont;
     li {
       display: grid;
-      grid-template-columns: 30px 336px;
-      grid-column-gap: 30px;
-      //justify-items: right; 
+      grid-template-columns: 9.1811% 83.3747%;
+      justify-content: space-between;
+      align-content: space-around;
       text-align: left;
-      margin: 10px;
       font-style: normal;
       font-weight: normal;
-      margin-bottom: 50px;
+      //padding-bottom: 12.41%;
+      margin-bottom: 12.41%;
       color: $darkShade25;
       div:first-child {
         text-align: right;
@@ -197,7 +196,6 @@ section,
       &:first-child {
         font-size: 24px;
         line-height: 29px;
-        //justify-items: right;
         div:last-child {
           font-family: Quicksand-Bold;
           font-size: 24px;
@@ -222,13 +220,14 @@ section,
         div:last-child {
           font-family: Montserrat-Bold;
           color: $darkShade100;
-          //text-align: left;
         }
       }
       &:last-child {
         font-size: 14px;
         line-height: 24px;
+        vertical-align: top;
         div:last-child {
+          width: 89.6%;
           color: $darkShade75 ;
         }
       }
